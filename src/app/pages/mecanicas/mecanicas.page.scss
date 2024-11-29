@@ -1,0 +1,39 @@
+ion-content {
+  --background: linear-gradient(to right, #090909, #633979);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  }
+  
+  .mechanics, .styles {
+    background: #70c40a;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    padding: 16px;
+  }
+  
+  h2 {
+    color: #333333;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+  }
+  
+  p {
+    color: #020202;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  li {
+    color: #070707;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  

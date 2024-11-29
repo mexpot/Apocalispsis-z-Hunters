@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button menu="first"></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <!-- Iteramos sobre el arreglo de personajes y mostramos los datos -->
+    <ion-card *ngFor="let personaje of personajesRecientes" (click)="verDetalle(personaje.data.id)">
+      <img [src]="personaje.data.imagen" style="height: 30vh; width: 60vh;">
+      <ion-card-header>
+        <ion-card-title>{{ personaje.data.nombre }}</ion-card-title>
+        <ion-card-subtitle>{{ personaje.data.dano }}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </ion-content>
+  

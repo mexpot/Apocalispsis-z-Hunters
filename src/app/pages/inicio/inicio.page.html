@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-label pager="true">
+    <ion-label *ngFor="let slide of slides">
+      
+      <h2>{{ slide.title }}</h2>
+      <p>{{ slide.description }}</p> <br>
+      <img [src]="slide.img">
+    </ion-label>
+  </ion-label>
+</ion-content>
+
+
+
+
+
+
+  

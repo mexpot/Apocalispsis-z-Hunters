@@ -1,0 +1,119 @@
+ion-content {
+  --background: linear-gradient(to right, #090909, #633979);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  }
+
+/* Estilos para la tarjeta de personajes */
+ion-card {
+  margin: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+ion-card:hover {
+  transform: scale(1.02);
+}
+
+ion-card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+ion-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+ion-card-content {
+  padding: 16px;
+}
+
+ion-item {
+  --background: #65939a;
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.2s;
+}
+
+ion-item:hover {
+  background-color: #f1f3f5;
+}
+
+ion-thumbnail img {
+  border-radius: 50%;
+  border: 2px solid #dee2e6;
+}
+
+ion-label h2 {
+  font-size: 18px;
+  color: #495057;
+}
+
+/* Estilos responsivos */
+@media (min-width: 576px) {
+
+  ion-content {
+    --background: linear-gradient(to right, #d7d6e6, #baea8d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Estilos para la tarjeta de personajes */
+  ion-card {
+    margin: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  ion-card:hover {
+    transform: scale(1.02);
+  }
+  
+  ion-card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  ion-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  ion-card-content {
+    padding: 16px;
+  }
+  
+  ion-item {
+    --background: #65939a;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s;
+  }
+  
+  ion-item:hover {
+    background-color: #f1f3f5;
+  }
+  
+  ion-thumbnail img {
+    border-radius: 50%;
+    border: 2px solid #dee2e6;
+  }
+  
+  ion-label h2 {
+    font-size: 18px;
+    color: #495057;
+  }
+  
+}
+
