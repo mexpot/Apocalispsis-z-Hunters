@@ -1,8 +1,6 @@
 
 
 export interface Detalle {
-  apellido: string;
-  armas: number;
   daño: number;
   descripcion: string;
   imagen: string;
@@ -28,12 +26,20 @@ export interface Personajes {
 
 export interface Personaje {
   id: string;
-  apellido: string;
-  armas: number;
   dano: number; // Usamos "daño" con la "ñ" para coincidir con el JSON
   descripcion: string;
   imagen: string; // Representa la URL de la imagen
   nombre: string;
   salud: number;
   velocidad: number;
+}
+
+export interface Mapa {
+  descripcion: string; // Descripción del mapa
+  imagen: string;      // URL de la imagen del mapa
+  nombre: string;      // Nombre del mapa
+}
+
+export interface MapasResponse {
+  datas: Mapa[]; // Lista de mapas proporcionados por la API
 }

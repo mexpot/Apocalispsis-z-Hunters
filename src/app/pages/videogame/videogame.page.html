@@ -6,15 +6,32 @@
       <ion-title>Inicio</ion-title>
     </ion-toolbar>
   </ion-header>
+
+ 
   
   <ion-content>
+    <ion-card-title style="text-align: center; width: 100%;">Zombis</ion-card-title>
     <!-- Iteramos sobre el arreglo de personajes y mostramos los datos -->
-    <ion-card *ngFor="let personaje of personajesRecientes" (click)="verDetalle(personaje.data.id)">
+    <ion-card *ngFor="let personaje of personajesRecientes" >
       <img [src]="personaje.data.imagen" style="height: 30vh; width: 60vh;">
       <ion-card-header>
         <ion-card-title>{{ personaje.data.nombre }}</ion-card-title>
-        <ion-card-subtitle>{{ personaje.data.dano }}</ion-card-subtitle>
+        <ion-card-subtitle>Daño: {{ personaje.data.dano }}</ion-card-subtitle>
+        <ion-card-subtitle>Velocidad: {{ personaje.data.velocidad }}</ion-card-subtitle>
+        <ion-card-subtitle>Salud: {{ personaje.data.salud }}</ion-card-subtitle>
+        <ion-card-subtitle>descripcion: {{ personaje.data.descripcion }}</ion-card-subtitle>
       </ion-card-header>
     </ion-card>
+
+    <ion-card-title style="text-align: center; width: 100%;">Mapas</ion-card-title>
+
+    <ion-card *ngFor="let mapa of mapasRecientes">
+      <img [src]="mapa.imagen" style="height: 30vh; width: 60vh;" />
+      <ion-card-header>
+        <ion-card-title>{{ mapa.nombre }}</ion-card-title>
+        <ion-card-subtitle>{{ mapa.descripcion }}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+
   </ion-content>
   
